@@ -7,9 +7,11 @@ using Microsoft.Extensions.Logging;
 using DatingApp.Api.Models;
 using DatingApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DatingApp.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
