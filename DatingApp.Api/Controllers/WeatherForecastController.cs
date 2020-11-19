@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DatingApp.Api.Controllers
 {
-    [Authorize]
-    [ApiController]
+    [AllowAnonymous]
+    [ApiController ]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
